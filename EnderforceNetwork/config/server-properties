@@ -1,0 +1,5 @@
+# Default server.properties for backend servers
+motd=Enderforce Network Backend
+online-mode=false
+enable-command-block=true
+gamemode=survival

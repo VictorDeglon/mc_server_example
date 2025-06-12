@@ -1,0 +1,24 @@
+# Velocity configuration for Enderforce Network
+config-version = 2
+bind = "0.0.0.0:25577"
+motd = "Enderforce Network Proxy"
+show-max-players = 100
+online-mode = false # WARNING: offline/cracked mode. Ensure compliance with Mojang's EULA.
+forwarding-mode = "modern"
+player-info-forwarding-secret = "CHANGE_ME"
+
+[servers]
+  lobby = "127.0.0.1:25565"
+  survival = "127.0.0.1:25566"
+  creative = "127.0.0.1:25567"
+  pvp = "127.0.0.1:25568"
+  minigames = "127.0.0.1:25569"
+  events = "127.0.0.1:25570"
+
+try = ["lobby"]
+
+[forced-hosts]
+  "play.enderforce.com" = "lobby"
+  "survival.enderforce.com" = "survival"
+  "build.enderforce.com" = "creative"
+  "event.enderforce.com" = "events"
